@@ -16,8 +16,14 @@
     }
   },
   "lint-staged": {
-    "./{pages,components}/**/*.{js,jsx,ts,tsx}": [
-      "next lint --fix"
+    "**/*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ],
+    "**/*.{md,mdx,json}": [
+      "prettier --write",
+      "git add"
     ]
   },
   "dependencies": {
