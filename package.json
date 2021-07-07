@@ -10,19 +10,10 @@
     "type-check": "tsc --project tsconfig.json --pretty --noEmit",
     "postinstall": "husky install"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
+
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": [
-      "prettier --write",
-      "eslint --fix",
-      "git add"
-    ],
-    "**/*.{md,mdx,json}": [
-      "prettier --write",
+      "yarn lint",
       "git add"
     ]
   },

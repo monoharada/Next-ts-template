@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <div className={`${styles.test} m-10 absolute text-xl p-14`""}>hoge!!!</div>
+        <div className={`${styles.test} m-10 absolute text-xl p-14`}>hoge!!!</div>
       </main>
 
       <footer className={styles.footer}>
