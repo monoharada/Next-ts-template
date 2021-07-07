@@ -10,6 +10,11 @@
     "type-check": "tsc --project tsconfig.json --pretty --noEmit",
     "postinstall": "husky install"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint"
+    }
+  },
   "dependencies": {
     "eslint-plugin-tailwind": "^0.2.1",
     "next": "11.0.1",
