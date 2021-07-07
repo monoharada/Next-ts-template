@@ -3,4 +3,5 @@
 
 # npm test
 yarn lint
+yarn type-check
 git add .

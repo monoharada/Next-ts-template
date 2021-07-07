@@ -8,20 +8,8 @@
     "start": "next start",
     "lint": "next lint --fix",
     "type-check": "tsc --project tsconfig.json --pretty --noEmit",
-    "postinstall": "husky install",
     "format": "prettier --write .",
     "prepare": "husky install"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "yarn lint",
-      "yarn format"
-    ]
   },
   "dependencies": {
     "eslint-plugin-tailwind": "^0.2.1",
