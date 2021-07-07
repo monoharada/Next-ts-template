@@ -3,4 +3,4 @@
 
 # npm test
 yarn lint
-git add
+git add .
