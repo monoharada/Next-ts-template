@@ -16,7 +16,7 @@
     }
   },
   "lint-staged": {
-    "{pages,components}/**/*.{js,jsx,ts,tsx}": [
+    "./{pages,components}/**/*.{js,jsx,ts,tsx}": [
       "next lint --fix"
     ]
   },
