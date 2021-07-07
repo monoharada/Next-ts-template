@@ -12,8 +12,13 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint"
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "{pages,components}/**/*.{js,jsx,ts,tsx}": [
+      "next lint --fix"
+    ]
   },
   "dependencies": {
     "eslint-plugin-tailwind": "^0.2.1",
@@ -27,7 +32,7 @@
     "eslint": "7.30.0",
     "eslint-config-next": "11.0.1",
     "eslint-config-prettier": "^8.3.0",
-    "husky": "^7.0.1",
+    "husky": "^7.0.0",
     "lint-staged": "^11.0.0",
     "postcss": "^8.3.5",
     "prettier": "^2.3.2",
